@@ -8,7 +8,8 @@ import './App.css';
 // import BtnStyle from './components/BtnStyle';
 
 function App() {
-  const [users, setUsers] = useState<null | User>(null);
+  // const [users, setUsers] = useState<null | User>(null);
+  const [users, setUsers] = useState<User>({} as User);
 
   const handleAddUser = () => {
     setUsers({id:1, name:"pravas"});
@@ -21,7 +22,8 @@ function App() {
  {/* <h3>Count: {count}</h3> */}
 
  <button onClick={handleAddUser}>AddUser</button>
- <p>{users?.name}</p>
+ {/* <p>{users?.name}</p> */}
+ <p>{users.name}</p>
     </div>
   );
 }

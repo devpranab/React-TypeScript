@@ -1,5 +1,5 @@
 import React from 'react';
-
+//props types
 type UserProps = {name: string; age: number, isDone: boolean};
 
 //const User = (props: UserProps) => {

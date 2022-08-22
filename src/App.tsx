@@ -7,7 +7,18 @@ import './App.css';
 // import Button from './components/Button';
 // import BtnStyle from './components/BtnStyle';
 
+type User = {
+  id: number,
+  name: string
+}
+
 function App() {
+  // const[count, setCount] = useState("false");//boolean
+  // setCount(12);//err bcs boolean not number
+ // const[count, setCount] = useState("0);//number
+ // const[count, setCount] = useState<number | string>("0);//number or string
+
+
   // const [users, setUsers] = useState<null | User>(null);
   const [users, setUsers] = useState<User>({} as User);
 

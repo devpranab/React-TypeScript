@@ -1,17 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 // import User from './components/User';
 // import User2 from './components/User2';
 // import UserPractice from './components/UserPractice';
 // import DataFetch from './DataFetch';
 // import Button from './components/Button';
-import BtnStyle from './components/BtnStyle';
+// import BtnStyle from './components/BtnStyle';
 
 function App() {
+  const [users, setUsers] = useState<null | User>(null);
+
+  const handleAddUser = () => {
+    setUsers({id:1, name:"pravas"});
+    console.log(users);
+    
+  }
   return (
     <div className="App">
- <h3>Style props</h3>
- <BtnStyle btnStyle={{color: 'red'}}/>
+ <h2>useState Hook Props</h2>
+ {/* <h3>Count: {count}</h3> */}
+
+ <button onClick={handleAddUser}>AddUser</button>
+ <p>{users?.name}</p>
     </div>
   );
 }

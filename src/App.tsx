@@ -5,17 +5,13 @@ import './App.css';
 // import UserPractice from './components/UserPractice';
 // import DataFetch from './DataFetch';
 // import Button from './components/Button';
-import Post from './components/Post';
+import BtnStyle from './components/BtnStyle';
 
 function App() {
   return (
     <div className="App">
-     {/* <DataFetch status="success"/>
-     <DataFetch status="error"/>
-     <DataFetch status="not"/> */}
-     {/* children props types defined */}
-     {/* <Button>click here</Button> */}
-     <Post />
+ <h3>Style props</h3>
+ <BtnStyle btnStyle={{color: 'red'}}/>
     </div>
   );
 }

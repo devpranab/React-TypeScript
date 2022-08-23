@@ -6,6 +6,7 @@ import './App.css';
 // import DataFetch from './DataFetch';
 // import Button from './components/Button';
 // import BtnStyle from './components/BtnStyle';
+ import EventType from './components/EventType';
 
 type User = {
   id: number,
@@ -35,6 +36,7 @@ function App() {
  <button onClick={handleAddUser}>AddUser</button>
  {/* <p>{users?.name}</p> */}
  <p>{users.name}</p>
+ <EventType/>
     </div>
   );
 }
